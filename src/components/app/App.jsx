@@ -55,7 +55,7 @@ function App() {
         {hiLimitErr ? <p>Cannot redo anymore, undo or choose a new color</p> : ''}
         <p>Your history</p>
         {history.map((histItem) => {
-        return <li>color {histItem}</li>}
+        return <li key={`${histItem}}`}>color {histItem}</li>}
         )}
       </div>
     </>
